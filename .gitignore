@@ -1,0 +1,31 @@
+# Build output
+backend/**/target/
+backend/**/build/
+*.jar
+*.class
+
+# Node
+node_modules/
+frontend/dist/
+frontend/*.log
+
+# Logs
+*.log
+/tmp/
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+*.env
+
+# Maven local
+.m2/

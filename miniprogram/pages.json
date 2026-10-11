@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/scan/index",
+    "pages/student/workbench",
+    "pages/student/repair",
+    "pages/student/payment"
+  ],
+  "window": {
+    "navigationBarTitleText": "宿舍管理"
+  }
+}

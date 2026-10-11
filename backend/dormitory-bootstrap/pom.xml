@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.dormitory</groupId>
+        <artifactId>dormitory-manage</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>dormitory-bootstrap</artifactId>
+    <name>dormitory-bootstrap</name>
+    <description>可执行启动模块：聚合所有业务模块，生成 Spring Boot 可运行 jar</description>
+
+    <dependencies>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-system</artifactId></dependency>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-dorm</artifactId></dependency>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-maintenance</artifactId></dependency>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-eval</artifactId></dependency>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-auth</artifactId></dependency>
+        <dependency><groupId>cn.dormitory</groupId><artifactId>dormitory-common</artifactId></dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>cn.dormitory.DormitoryApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals><goal>repackage</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

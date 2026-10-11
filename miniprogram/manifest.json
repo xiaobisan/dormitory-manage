@@ -1,0 +1,13 @@
+export default {
+  "pages": [
+    "pages/scan/index",
+    "pages/student/workbench",
+    "pages/student/repair",
+    "pages/student/payment"
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宿舍管理",
+    "navigationBarBackgroundColor": "#ffffff"
+  }
+}
